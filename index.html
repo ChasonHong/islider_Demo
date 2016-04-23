@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<link href="css/islider.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="loading-page">
+    <div class="load-panel">
+        <div class="logo ta-c"><img src="images/load-02.png" width="47" height="31" alt="小螃蟹"></div>
+        <div class="process-box">
+            <div class="process"></div>
+            <div class="process-percent"></div>
+        </div>
+        <p>小螃蟹努力加载中…</p>
+    </div>
+  </div>
+  <div id="iSlider"></div>
+  <b id="godown" class="page0_bg godown"></b>
+  <script type="text/javascript" src="js/islider.js"></script>
+  <script type="text/javascript" src="js/zepto.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script>
+    var list = [{
+      'content' : '<div class="content home"><h1>Home</h1><h2>This is home page</h2><p>home is pretty awsome</p><p>搭一个滑屏切换的h5活动页框架，方便日后工作使用</p><p>Created by Chason on 16/04/23.</p><div>'
+    },
+    {
+      'content' : '<div class="content page1"><h1>Page1</h1><h2>This is page1</h2><p>page1 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page2"><h1>Page2</h1><h2>This is Page2</h2><p>Page2 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page3"><h1>Page3</h1><h2>This is Page3</h2><p>Page3 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page4"><h1>Page4</h1><h2>This is Page4</h2><p>Page4 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page5"><h1>Page5</h1><h2>This is page5</h2><p>page5 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page6"><h1>Page6</h1><h2>This is Page4</h2><p>Page4 is pretty awsome</p><div>'
+    },
+    {
+      'content' : '<div class="content page7"><h1>Page7</h1><h2>This is page5</h2><p>page5 is pretty awsome</p><div>'
+    }];
+    var islider = new iSlider({
+        data: list,
+        type: 'dom',
+        dom: document.getElementById("iSlider"),
+        duration: 1000,
+        isVertical: true
+    });
+  </script>
+</body>
+</html>
